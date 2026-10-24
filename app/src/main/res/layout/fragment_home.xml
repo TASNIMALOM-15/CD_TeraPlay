@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="TeraPlay"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.teraplay.app.GlassLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/accountsBtn"
+                style="@style/PillIcon"
+                android:contentDescription="Accounts"
+                android:src="@drawable/ic_person" />
+
+            <ImageView
+                android:id="@+id/searchBtn"
+                style="@style/PillIcon"
+                android:contentDescription="Search"
+                android:src="@drawable/ic_search" />
+
+            <ImageView
+                android:id="@+id/addBtn"
+                style="@style/PillIcon"
+                android:contentDescription="Add"
+                android:src="@drawable/ic_add" />
+
+            <ImageView
+                android:id="@+id/sortBtn"
+                style="@style/PillIcon"
+                android:contentDescription="Sort"
+                android:src="@drawable/ic_sort" />
+
+            <ImageView
+                android:id="@+id/colsBtn"
+                style="@style/PillIcon"
+                android:contentDescription="Columns"
+                android:src="@drawable/ic_cols2" />
+        </com.teraplay.app.GlassLinearLayout>
+    </LinearLayout>
+
+    <com.teraplay.app.GlassLinearLayout
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="@string/s108"
+            android:inputType="text"
+            android:singleLine="true" />
+    </com.teraplay.app.GlassLinearLayout>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/importBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="@string/s109"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" />
+</LinearLayout>
