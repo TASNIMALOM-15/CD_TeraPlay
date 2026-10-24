@@ -37,4 +37,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: TeraPlay-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apkl
+          path: app/build/outputs/apk/debug/app-debug.apk
