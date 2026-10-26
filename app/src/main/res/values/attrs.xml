@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Glass">
+        <attr name="glassRadius" format="dimension" />
+        <attr name="glassSelected" format="boolean" />
+        <attr name="glassOverlay" format="boolean" />
+    </declare-styleable>
+</resources>

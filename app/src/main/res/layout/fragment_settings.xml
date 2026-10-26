@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingsScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/s111"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.teraplay.app.GlassLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:glassRadius="26dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/s112"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:id="@+id/bgPreview"
+                    android:layout_width="84dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_bg"
+                    android:clipToOutline="true"
+                    android:contentDescription="Preview"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.teraplay.app.GlassTextView
+                        android:id="@+id/pickBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/s113"
+                        android:textSize="14sp" />
+
+                    <com.teraplay.app.GlassTextView
+                        android:id="@+id/resetBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="@string/s114"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:text="@string/s115"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/presetRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:text="@string/s116"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="6dp">
+
+                <com.teraplay.app.GlassTextView
+                    android:id="@+id/fitCover"
+                    style="@style/ActionChip"
+                    android:text="Cover" />
+
+                <com.teraplay.app.GlassTextView
+                    android:id="@+id/fitContain"
+                    style="@style/ActionChip"
+                    android:text="Contain" />
+
+                <com.teraplay.app.GlassTextView
+                    android:id="@+id/fitCenter"
+                    style="@style/ActionChip"
+                    android:text="Center" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/blurLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/blurSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="25" />
+
+            <TextView
+                android:id="@+id/dimLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/dimSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="80" />
+
+            <TextView
+                android:id="@+id/glassLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:textSize="13sp" />
+
+            <SeekBar
+                android:id="@+id/glassSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="50" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/s117"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="11sp" />
+        </com.teraplay.app.GlassLinearLayout>
+
+        <com.teraplay.app.GlassLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:glassRadius="26dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/s118"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <com.teraplay.app.GlassTextView
+                    android:id="@+id/themeDark"
+                    style="@style/ActionChip"
+                    android:text="@string/s119" />
+
+                <com.teraplay.app.GlassTextView
+                    android:id="@+id/themeLight"
+                    style="@style/ActionChip"
+                    android:text="@string/s120" />
+            </LinearLayout>
+        </com.teraplay.app.GlassLinearLayout>
+
+        <com.teraplay.app.GlassLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:glassRadius="26dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/s121"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.teraplay.app.GlassTextView
+                android:id="@+id/speedPick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="13dp"
+                android:textSize="14sp" />
+        </com.teraplay.app.GlassLinearLayout>
+
+        <com.teraplay.app.GlassLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:glassRadius="26dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bg_card_title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:text="@string/bg_hint"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bgStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="13sp" />
+
+            <com.teraplay.app.GlassTextView
+                android:id="@+id/bgNotifBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="13dp"
+                android:text="@string/bg_notif_btn"
+                android:textSize="14sp" />
+
+            <com.teraplay.app.GlassTextView
+                android:id="@+id/bgBatteryBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="13dp"
+                android:text="@string/bg_battery_btn"
+                android:textSize="14sp" />
+        </com.teraplay.app.GlassLinearLayout>
+
+        <com.teraplay.app.GlassLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:glassRadius="26dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/s122"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <com.teraplay.app.GlassTextView
+                    android:id="@+id/langEn"
+                    style="@style/ActionChip"
+                    android:text="English" />
+
+                <com.teraplay.app.GlassTextView
+                    android:id="@+id/langBn"
+                    style="@style/ActionChip"
+                    android:text="বাংলা" />
+            </LinearLayout>
+        </com.teraplay.app.GlassLinearLayout>
+    </LinearLayout>
+</ScrollView>
