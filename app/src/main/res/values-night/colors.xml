@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_base">#0A1016</color>
+    <color name="glass_text">#FFFFFF</color>
+    <color name="glass_text2">#AEB9C5</color>
+    <color name="glass_icon">#F2F6FA</color>
+    <color name="glass_dialog_fill">#EB1B2430</color>
+    <color name="glass_popup_fill">#F0182230</color>
+    <color name="scrim_edge">#D90A1016</color>
+    <color name="scrim_clear">#000A1016</color>
+</resources>
